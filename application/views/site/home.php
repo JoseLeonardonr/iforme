@@ -41,62 +41,64 @@
             </div>
             <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Cardápio</a>
-                    <a class="mdl-navigation__link" href="blog.html">Locais importantes</a>
+                    <a class="mdl-navigation__link is-active" href="<?php echo base_url('home');?>">Cardápio</a>
+                    <a class="mdl-navigation__link" href="<?php echo base_url('locais');?>">Locais importantes</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Cardápio</a>
-                <a class="mdl-navigation__link" href="blog.html">Locais importantes</a>
+                <a class="mdl-navigation__link is-active" href="<?php echo base_url('home');?>">Cardápio</a>
+                <a class="mdl-navigation__link" href="<?php echo base_url('locais');?>">Locais importantes</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-cell mdl-card mdl-cell--12-col-tablet mdl-shadow--4dp portfolio-card">
                     <div>
-                        <h3 class="tituloCardapio">Informações do ticket</h3>
+                        <h3 class="tituloCardapio">Ticket</h3>
                     </div>
                     <div class="mdl-card__supporting-text divItensCardapio">
                         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
                             <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                                <i class="material-icons">schedule</i>
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                                Horário atendimento:<br>
+                                Seg a Sex das 8:00 ao 12:00 e 13:30 as 18:00<br>
+                                Sábado e domingo das 8:00 ao 12:00
                             </div>
                         </div>
                         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
                             <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                                <i class="material-icons">attach_money</i>
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                                Professor: R$ 15,00
                             </div>
                         </div>
                         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
                             <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                                <i class="material-icons">attach_money</i>
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                                Visitante: R$ 3,50
                             </div>
                         </div>
                         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
                             <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                                <i class="material-icons">attach_money</i>
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                                Estudante: R$ 1,50
                             </div>
                         </div>
                         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
                             <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                                <i class="material-icons">attach_money</i>
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                                Terceirizado: R$ 0,25
                             </div>
                         </div>
                     </div>
@@ -109,42 +111,10 @@
                     <div class="mdl-card__supporting-text divItensCardapio">
                         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
                             <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                                <i class="material-icons">warning</i>
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                                Cardápio não disponível
                             </div>
                         </div>
                     </div>
