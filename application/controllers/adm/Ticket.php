@@ -2,10 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Ticket extends CI_Controller {
-    function _contruct(){
+    function __contruct(){
         
         parent::__construct();
       
+        $this->load->model('Tipo_ticket_model');
     }
     
     
@@ -44,7 +45,11 @@ class Ticket extends CI_Controller {
                 $this->verificar_sessao();
                 $this->load->view('includes/html_header');
                 $this->load->view('includes/menu');
-                $this->load->view('cadastro_ticket');
+                $this->load->model('tipo_ticket_model');
+                $dados = array(
+                    'tiposTickets' => $this->tipo_ticket_model->BuscarParaSelect()
+                );
+                $this->load->view('cadastro_ticket', $dados);
                 $this->load->view('includes/html_footer');
 	}
         public function cadastrar(){   

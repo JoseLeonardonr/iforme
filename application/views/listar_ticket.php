@@ -22,8 +22,8 @@
                 <tr>
                     <td><?= $ref->id_ticket; ?> </td>
                     <td><?= $ref->data_cadastro; ?> </td>
-                    <td><?= $ref->valor_ticket; ?> </td>
-                    <td><?= $ref->id_tipo_ticket==1?'Estudante':'Terceirizado'; ?> </td>
+                    <td><?= number_format($ref->valor_ticket, 2, ',', '.'); ?> </td>
+                    <td><?= $ref->tipoTicket; ?> </td>
                     <td>
                         
                        

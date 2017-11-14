@@ -57,12 +57,11 @@ class Ticket_model extends CI_Model{
         
    
     public function get_ticket(){
-                $this->db->select('*');
-                return $this->db->get('valor_ticket')->result();
-    }
-    
         
-     
+        $this->db->select('v.*, t.nome as tipoTicket');
+        $this->db->join('tipo_ticket as t', 't.id = v.id_tipo_ticket');
+        return $this->db->get('valor_ticket as v')->result();
+    }     
 }
 
 /* 

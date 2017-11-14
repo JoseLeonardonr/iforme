@@ -19,12 +19,7 @@
                 
                 <div class="col-md-4">
                     <label for="tipo">Tipo Ticket: </label>
-                    <select id="tipo" class="form-control" name="tipo" required>
-                        <option value="0"> ---</option>
-                        <option value="1"> Estudante</option>
-                        <option value="2"> Terceirizado</option>
-                        
-                    </select>
+                    <?php echo form_dropdown('tipo', $tiposTickets, null, 'class="form-control" id="tipo" required')?>
                 </div>
                 <div class="col-md-2">
                     <label for="acomp_1">Valor: </label>

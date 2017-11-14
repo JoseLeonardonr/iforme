@@ -65,42 +65,20 @@
                             </div>
                             <div class="mdl-cell mdl-cell--10-col">
                                 Horário atendimento:<br>
-                                Seg a Sex das 8:00 ao 12:00 e 13:30 as 18:00<br>
-                                Sábado e domingo das 8:00 ao 12:00
+                                <?php echo $informacoes->horario_funcionamento;?>
                             </div>
                         </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">attach_money</i>
+                        <?php foreach ($tiposTickets as $tipo) {?>
+                            
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">attach_money</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $tipo->nome;?>: R$ <?php echo number_format($tipo->valor_ticket, 2, ',', '.');?>
+                                </div>
                             </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                Professor: R$ 15,00
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">attach_money</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                Visitante: R$ 3,50
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">attach_money</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                Estudante: R$ 1,50
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">attach_money</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                Terceirizado: R$ 0,25
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
