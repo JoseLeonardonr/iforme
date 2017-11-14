@@ -84,65 +84,124 @@
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div>
                         <h3 class="tituloCardapio">Almoço</h3>
-                        <h3 class="subtituloCardapio">31/10/2017</h3>
+                        <h3 class="subtituloCardapio"><?php echo date('d/m/Y');?></h3>
                     </div>
                     <div class="mdl-card__supporting-text divItensCardapio">
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">warning</i>
+                        
+                        <?php if(!$almoco) {?>
+
+                                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                    <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                        <i class="material-icons">warning</i>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--10-col">
+                                        Cardápio não disponível
+                                    </div>
+                                </div>
+                        <?php } else {?>
+
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $almoco->acomp1_refeicao;?>
+                                </div>
                             </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                Cardápio não disponível
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $almoco->acomp2_refeicao;?>
+                                </div>
                             </div>
-                        </div>
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $almoco->guarnicao1_refeicao;?>
+                                </div>
+                            </div>
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $almoco->guarnicao2_refeicao;?>
+                                </div>
+                            </div>
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $almoco->salada_refeicao;?>
+                                </div>
+                            </div>
+                        <?php }?>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div>
                         <h3 class="tituloCardapio">Jantar</h3>
-                        <h3 class="subtituloCardapio">31/10/2017</h3>
+                        <h3 class="subtituloCardapio"><?php echo date('d/m/Y');?></h3>
                     </div>
                     <div class="mdl-card__supporting-text divItensCardapio">
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                        <?php if(!$janta) {?>
+
+                                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                    <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                        <i class="material-icons">warning</i>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--10-col">
+                                        Cardápio não disponível
+                                    </div>
+                                </div>
+                        <?php } else {?>
+
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $janta->acomp1_refeicao;?>
+                                </div>
                             </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $janta->acomp2_refeicao;?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $janta->guarnicao1_refeicao;?>
+                                </div>
                             </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $janta->guarnicao2_refeicao;?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
+                            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
+                                <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
+                                    <i class="material-icons">restaurant</i>
+                                </div>
+                                <div class="mdl-cell mdl-cell--10-col">
+                                    <?php echo $janta->salada_refeicao;?>
+                                </div>
                             </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
-                        <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--12dp linhaCardapio">
-                            <div class="mdl-cell mdl-cell--2-col  mdl-cell--12-col-tablet">
-                                <i class="material-icons">restaurant</i>
-                            </div>
-                            <div class="mdl-cell mdl-cell--10-col">
-                                fricassê de frango/tomate recheado pts
-                            </div>
-                        </div>
+                        <?php }?>
                     </div>
                 </div>
             </div>

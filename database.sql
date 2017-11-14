@@ -57,11 +57,6 @@ CREATE TABLE `refeicao` (
   `guarnicao2_refeicao` varchar(100) NOT NULL,
   `salada_refeicao` varchar(100) NOT NULL,
   `tipo_id_tipo` int(11) NOT NULL,
-  `acomp1_refeicao_icone` varchar(100) NOT NULL DEFAULT 'restaurant',
-  `acomp2_refeicao_icone` varchar(100) NOT NULL DEFAULT 'restaurant',
-  `guarnicao1_refeicao_icone` varchar(100) NOT NULL DEFAULT 'restaurant',
-  `guarnicao2_refeicao_icone` varchar(100) NOT NULL DEFAULT 'restaurant',
-  `salada_refeicao_icone` varchar(100) NOT NULL DEFAULT 'restaurant',
   PRIMARY KEY (`id_refeicao`),
   KEY `fk_refeicao_tipo_idx` (`tipo_id_tipo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
@@ -73,7 +68,7 @@ CREATE TABLE `refeicao` (
 
 LOCK TABLES `refeicao` WRITE;
 /*!40000 ALTER TABLE `refeicao` DISABLE KEYS */;
-INSERT INTO `refeicao` VALUES (2,'2017-09-12','macarrão','ovo','farofa','pimentão','alface',2,'restaurant','restaurant','restaurant','restaurant','restaurant'),(4,'2017-09-21','arroz','feijão','polenta','ovo','brocolis',1,'restaurant','restaurant','restaurant','restaurant','restaurant');
+INSERT INTO `refeicao` VALUES (2,'2017-09-12','macarrão','ovo','farofa','pimentão','alface',2),(4,'2017-09-21','arroz','feijão','polenta','ovo','brocolis',1);
 /*!40000 ALTER TABLE `refeicao` ENABLE KEYS */;
 UNLOCK TABLES;
 

@@ -71,12 +71,24 @@ class Refeicao_model extends CI_Model{
     return $this->db->get('tbl_cidade')->result();
     }
         
-     
+    public function RefeicaoDoDia($tipo) {
+        
+        $this->db->select('*');
+        
+        $this->db->join('tipo', 'id_tipo = tipo_id_tipo');
+        
+        $this->db->where('data_refeicao', date('Y-m-d'));
+        $this->db->where('nome_tipo', $tipo);
+        
+        $dados =  $this->db->get('refeicao')->result();
+        
+        if(count($dados)) {
+            
+            return $dados[0];
+        }
+        else {
+            
+            return null;
+        }
+    }
 }
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
