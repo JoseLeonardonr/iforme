@@ -79,20 +79,75 @@
     <script src="<?= base_url("assets/js/material.min.js")?>"></script>
     <script>
       function initMap() {
-        var uluru = {lat: -21.350755, lng: -46.527094};
+        var uluru = {lat: -21.351630, lng: -46.526437};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
+          zoom: 16,
           center: uluru
         });
         var marker = new google.maps.Marker({
           position: uluru,
           map: map,
-          title: "Hello World"
+          title: "Biblioteca"
         });
         var marker = new google.maps.Marker({
-          position: {lat: -21.350765, lng: -46.527004},
+          position: {lat: -21.351515, lng: -46.521776},
           map: map,
-          title: "Hello World 2"
+          title: "Mecanização"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350988, lng: -46.525418},
+          map: map,
+          title: "Agroindústria"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350811, lng: -46.527041},
+          map: map,
+          title: "Prédio da Informática"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350802, lng: -46.526801},
+          map: map,
+          title: "Almoxarifado"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350477, lng: -46.527689},
+          map: map,
+          title: "Secretaria"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350139, lng: -46.527797},
+          map: map,
+          title: "Cooperativa"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.349841, lng: -46.527869},
+          map: map,
+          title: "Lanchonete"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350353, lng: -46.528426},
+          map: map,
+          title: "Prédio H"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.350915, lng: -46.528929},
+          map: map,
+          title: "Administração"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.348968, lng: -46.528793},
+          map: map,
+          title: "Quadra"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.349365, lng: -46.529465},
+          map: map,
+          title: "Alojamento Feminino"
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: -21.349672, lng: -46.529705},
+          map: map,
+          title: "Alojamento Masculino"
         });
       }
     </script>
